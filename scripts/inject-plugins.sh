@@ -3,7 +3,7 @@
 dotenvPath="./.env.xml"
 solutionDirectory=$(pwd)
 publishConfiguration="Release"
-projects=("NineChronicles.Mods.Athena" "NineChronicles.Modules.BlockSimulation")
+projects=("NineChronicles.Mods.Athena" "NineChronicles.Modules.BlockSimulation" "NineChronicles.Mods.AutoArena")
 
 function get_ninechronicles_dir_from_env() {
     nineChroniclesDir=$(xmllint --xpath 'string(//Project/PropertyGroup/NINECHRONICLES_DIR)' "$dotenvPath")
